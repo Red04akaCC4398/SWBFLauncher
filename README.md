@@ -40,6 +40,9 @@ SWBFLauncher has the interface like any other launchers seen from different vide
 **NOTE: It is probably the app will receive upcoming updates temporarily, so I recommend to check this page often if you are interested in upgrading to the most recent version.**
 
 To sum up, don't be afraid to let me know about any problems or bugs. ;)
+
 All icons used on this interface are free-licensed.
+
 All credits goes to LucasArts/Pandemic for the Star Wars Battlefront (2004) logo.
+
 Special thanks to Battlebelk and Dark Phanthom who discovered how to change resolution directly from process memory and language localization.
