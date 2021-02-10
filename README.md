@@ -35,7 +35,7 @@ SWBFLauncher has the interface like any other launchers seen from different vide
 ![AddOns](https://i.ibb.co/9pjbBCB/AddOns.png)
 ![enter image description here](https://i.ibb.co/QKVHj1g/Settings.png)
 ## Download:
-**[Download v0.1](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.1)**
+**[SWBFLauncher v0.1](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.1)**
 
 **NOTE: It is probably the app will receive upcoming updates temporarily, so I recommend to check this page often if you are interested in upgrading to the most recent version.**
 
