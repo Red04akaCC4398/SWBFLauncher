@@ -34,11 +34,13 @@ SWBFLauncher has the interface like any other launchers seen from different vide
 
 **NOTE: Make sure you must extract the app with the `winini.dll` and `localize.dll` file to avoid problems.**
 ## Screenshots:
-![Main menu](https://i.ibb.co/JczQhXp/Main-Menu.png)
+![Main menu](https://i.ibb.co/6vSx6xz/Main-Menu.png)
 
-![AddOns](https://i.ibb.co/9pjbBCB/AddOns.png)
+![AddOns](https://i.ibb.co/2K4d0j5/AddOns.png)
 
-![enter image description here](https://i.ibb.co/QKVHj1g/Settings.png)
+![Mods](https://i.ibb.co/Qk05RNj/Mods.png)
+
+![Settings](https://i.ibb.co/D9d0VqQ/Settings.png)
 
 ## Download:
 **[SWBFLauncher v0.2](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.2)**
