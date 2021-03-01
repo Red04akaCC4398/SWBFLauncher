@@ -1,4 +1,6 @@
-﻿Public Class Form5
+﻿'Basically, a window which displays the current savegame profiles. You can delete the selected profiles.
+'Modification of these files seems not possible.
+Public Class Form5
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim profilesDirectory As String = "SaveGames"
         If System.IO.Directory.Exists(profilesDirectory) Then

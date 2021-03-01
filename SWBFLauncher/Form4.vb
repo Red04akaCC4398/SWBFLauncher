@@ -1,15 +1,20 @@
 ﻿Imports winini
 Public Class Form4
+    'Here we load the settings.ini file and display all the selected/non-selected options to this window.
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim section As String() = {"Game", "Video", "Audio"}
+        Dim section As String() = {"Game", "Video", "Audio", "AddOns", "Mods"}
         Dim settingsFile As String = "settings.ini"
         Dim lvlDirectory As String = "Data\_LVL_PC"
         Dim gameSettings As INI = New INI
         Dim videoSettings As INI = New INI
         Dim audioSettings As INI = New INI
+        Dim addOnsSettings As INI = New INI
+        Dim modsSettings As INI = New INI
         gameSettings.LoadINIFile(section(0), settingsFile)
         videoSettings.LoadINIFile(section(1), settingsFile)
         audioSettings.LoadINIFile(section(2), settingsFile)
+        addOnsSettings.LoadINIFile(section(3), settingsFile)
+        modsSettings.LoadINIFile(section(4), settingsFile)
         ComboBox1.Text = gameSettings.GetINIValue("Language")
         ComboBox2.Text = videoSettings.GetINIValue("Width") & "x" & videoSettings.GetINIValue("Height")
         If videoSettings.GetINIValue("WindowedMode") = 1 Then
@@ -34,47 +39,53 @@ Public Class Form4
             CheckBox6.Checked = True
             TextBox2.Enabled = True
         End If
+        ComboBox3.Text = addOnsSettings.GetINIValue("SortBy")
+        If addOnsSettings.GetINIValue("AddOnLocalization") = 1 Then
+            CheckBox7.Checked = True
+        End If
+        If modsSettings.GetINIValue("ModLocalization") = 1 Then
+            CheckBox8.Checked = True
+        End If
         If System.IO.File.Exists(lvlDirectory & "\vidmode.ini") Then
-            Using resolution As New System.IO.StreamReader(lvlDirectory & "\vidmode.ini")
-                Dim endOfResolution As Boolean = False
-                Dim aux As String = ""
-                Dim auxResolution As String = ""
-                'Dim auxSize As Integer = 100
-                Dim count As Integer
-                Dim num As Integer = 0
-                Dim auxNum As Integer = 0
-                resolution.ReadLine()
-                Do
-                    aux = resolution.ReadLine()
-                    count = 0
-                    auxResolution = ""
-                    For Each letter In aux
-                        If letter = " " Then
-                            count += 1
-                            If count < 2 Then
-                                auxResolution += "x"
-                            End If
-                        Else
-                            If count = 0 Then
-                                auxResolution += letter
-                            End If
-                            If count = 1 Then
-                                auxResolution += letter
-                            End If
-                            If count = 2 Then
-                                num += letter.ToString
-                            End If
+            Dim resolution As New System.IO.StreamReader(lvlDirectory & "\vidmode.ini")
+            Dim endOfResolution As Boolean = False
+            Dim aux As String = ""
+            Dim auxResolution As String = ""
+            'Dim auxSize As Integer = 100
+            Dim count As Integer
+            Dim num As Integer = 0
+            Dim auxNum As Integer = 0
+            resolution.ReadLine()
+            Do
+                aux = resolution.ReadLine()
+                count = 0
+                auxResolution = ""
+                For Each letter In aux
+                    If letter = " " Then
+                        count += 1
+                        If count < 2 Then
+                            auxResolution += "x"
                         End If
-                    Next
-                    If auxNum < num Then
-                        endOfResolution = True
                     Else
-                        ComboBox2.Items.Add(auxResolution)
+                        If count = 0 Then
+                            auxResolution += letter
+                        End If
+                        If count = 1 Then
+                            auxResolution += letter
+                        End If
+                        If count = 2 Then
+                            num += letter.ToString
+                        End If
                     End If
-                    auxNum = num
-                Loop Until endOfResolution Or resolution.EndOfStream
-                resolution.Close()
-            End Using
+                Next
+                If auxNum < num Then
+                    endOfResolution = True
+                Else
+                    ComboBox2.Items.Add(auxResolution)
+                End If
+                auxNum = num
+            Loop Until endOfResolution Or resolution.EndOfStream
+            resolution.Close()
         End If
     End Sub
 
@@ -97,13 +108,14 @@ Public Class Form4
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Form5.Show()
     End Sub
-
+    'Button which applies all the changes. Once we finished setting up options, we can save them to settings.ini file.
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim section As String() = {"Game", "Video", "Audio", "Mods"}
+        Dim section As String() = {"Game", "Video", "Audio", "AddOns", "Mods"}
         Dim settingsFile As String = "settings.ini"
         Dim gameSettings As INI = New INI
         Dim videoSettings As INI = New INI
         Dim audioSettings As INI = New INI
+        Dim addOnsSettings As INI = New INI
         Dim modsSettings As INI = New INI
         Dim width As String = ""
         Dim height As String = ""
@@ -111,7 +123,8 @@ Public Class Form4
         gameSettings.LoadINIFile(section(0), settingsFile)
         videoSettings.LoadINIFile(section(1), settingsFile)
         audioSettings.LoadINIFile(section(2), settingsFile)
-        modsSettings.LoadINIFile(section(3), settingsFile)
+        addOnsSettings.LoadINIFile(section(3), settingsFile)
+        modsSettings.LoadINIFile(section(4), settingsFile)
         gameSettings.SetINIValue("Language", ComboBox1.Text)
         For Each symbol In ComboBox2.Text
             If symbol = "x" Then
@@ -158,14 +171,34 @@ Public Class Form4
             audioSettings.SetINIValue("SetCustomAudioMixBuffer", 1)
             audioSettings.SetINIValue("AudioMixBuffer", TextBox2.Text)
         End If
+        addOnsSettings.SetINIValue("SortBy", ComboBox3.Text)
+        If CheckBox7.Checked = False Then
+            addOnsSettings.SetINIValue("AddOnLocalization", 0)
+        Else
+            addOnsSettings.SetINIValue("AddOnLocalization", 1)
+        End If
+        If CheckBox8.Checked = False Then
+            modsSettings.SetINIValue("ModLocalization", 0)
+        Else
+            modsSettings.SetINIValue("ModLocalization", 1)
+        End If
         gameSettings.SaveINIFile(True)
         videoSettings.SaveINIFile(False)
         audioSettings.SaveINIFile(False)
+        addOnsSettings.SaveINIFile(False)
         modsSettings.SaveINIFile(False)
         Me.Close()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Close()
+    End Sub
+    'Button which displays hidden advanced options, just in case it is necessary.
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If Me.Width = 291 And Me.Height = 366 Then
+            Me.Size = New Size(291, 493)
+        Else
+            Me.Size = New Size(291, 366)
+        End If
     End Sub
 End Class

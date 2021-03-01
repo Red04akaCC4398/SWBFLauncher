@@ -27,6 +27,7 @@ Partial Class Form4
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
@@ -43,9 +44,17 @@ Partial Class Form4
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -56,7 +65,7 @@ Partial Class Form4
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(251, 83)
+        Me.GroupBox1.Size = New System.Drawing.Size(251, 75)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Game"
@@ -64,7 +73,7 @@ Partial Class Form4
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 53)
+        Me.Label2.Location = New System.Drawing.Point(6, 51)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 1
@@ -74,7 +83,7 @@ Partial Class Form4
         '
         Me.Button1.Location = New System.Drawing.Point(70, 46)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(101, 26)
+        Me.Button1.Size = New System.Drawing.Size(101, 22)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Show all profiles"
         Me.Button1.UseVisualStyleBackColor = True
@@ -97,6 +106,16 @@ Partial Class Form4
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Language:"
         '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Location = New System.Drawing.Point(9, 46)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(217, 17)
+        Me.CheckBox7.TabIndex = 3
+        Me.CheckBox7.Text = "Enable language localization for AddOns"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.CheckBox3)
@@ -104,7 +123,7 @@ Partial Class Form4
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.ComboBox2)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 101)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 93)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(251, 94)
         Me.GroupBox2.TabIndex = 1
@@ -167,7 +186,7 @@ Partial Class Form4
         Me.GroupBox3.Controls.Add(Me.TextBox1)
         Me.GroupBox3.Controls.Add(Me.CheckBox5)
         Me.GroupBox3.Controls.Add(Me.CheckBox4)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 201)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 193)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(251, 98)
         Me.GroupBox3.TabIndex = 2
@@ -240,27 +259,89 @@ Partial Class Form4
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(84, 305)
+        Me.Button2.Location = New System.Drawing.Point(109, 297)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 26)
+        Me.Button2.Size = New System.Drawing.Size(74, 22)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "OK"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(176, 305)
+        Me.Button3.Location = New System.Drawing.Point(189, 297)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(86, 26)
+        Me.Button3.Size = New System.Drawing.Size(74, 22)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Cancel"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label6)
+        Me.GroupBox4.Controls.Add(Me.ComboBox3)
+        Me.GroupBox4.Controls.Add(Me.CheckBox7)
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 325)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(251, 71)
+        Me.GroupBox4.TabIndex = 5
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "AddOns"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(6, 22)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(43, 13)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Sort by:"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Disabled", "Enabled"})
+        Me.ComboBox3.Location = New System.Drawing.Point(70, 19)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox3.TabIndex = 4
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.CheckBox8)
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 402)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(251, 44)
+        Me.GroupBox5.TabIndex = 6
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Mods"
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Location = New System.Drawing.Point(9, 19)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(205, 17)
+        Me.CheckBox8.TabIndex = 8
+        Me.CheckBox8.Text = "Enable language localization for Mods"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(29, 297)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(74, 22)
+        Me.Button4.TabIndex = 7
+        Me.Button4.Text = "Advanced..."
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(274, 341)
+        Me.ClientSize = New System.Drawing.Size(275, 327)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.GroupBox5)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox3)
@@ -280,6 +361,10 @@ Partial Class Form4
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -305,4 +390,11 @@ Partial Class Form4
     Friend WithEvents Button3 As Button
     Private WithEvents Label5 As Label
     Private WithEvents Label4 As Label
+    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Private WithEvents Label6 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents Button4 As Button
 End Class
