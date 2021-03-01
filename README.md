@@ -41,7 +41,7 @@ SWBFLauncher has the interface like any other launchers seen from different vide
 ![enter image description here](https://i.ibb.co/QKVHj1g/Settings.png)
 
 ## Download:
-**[SWBFLauncher v0.1](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.1)**
+**[SWBFLauncher v0.2](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.2)**
 
 **NOTE: SWBFLauncher has been update to v0.2 with important changes and new features. Unfortunately this means some of the file structure is not compatible anymore. If you want to update, make sure you move all the AddOn directories from the `Mods` directory to the `AddOn` directory and you delete the `settings.ini` file.**
 
