@@ -26,7 +26,7 @@ SWBFLauncher has the interface like any other launchers seen from different vide
 | `winini.dll` | Dynamic library which allows to use an INI class to load/modify/save `.ini` files. |
 | `localize.dll` | Dynamic library which allows to use a Localization class to load/modify/save `core.lvl` files. |
 | `Data/_BACKUP` | Directory which saves original SWBF files in case of mod installation. If it doesn't exist, `SWBFLauncher.exe` creates it. |
-| `Mods` | Directory which stores `MapID` folders unused in-game. If it doesn't exist, `SWBFLauncher.exe` creates it. |
+| `Mods` | Directory which stores `MapID` folders. If it doesn't exist, `SWBFLauncher.exe` creates it. |
 ## How to install:
 
 1. Open the `.zip` folder an extract the files in the folder you installed Star Wars Battlefront (2004) (`LucasArts\Star Wars Battlefront\GameData`).
