@@ -43,7 +43,7 @@ SWBFLauncher has the interface like any other launchers seen from different vide
 ![Settings](https://i.ibb.co/9g2VjWn/Settings.png)
 
 ## Download:
-**[SWBFLauncher v0.3](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.2)**
+**[SWBFLauncher v0.3](https://github.com/Red04akaCC4398/SWBFLauncher/releases/tag/v0.3)**
 
 To sum up, don't be afraid to let me know about any problems or bugs. ;)
 
