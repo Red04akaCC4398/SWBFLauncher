@@ -3,7 +3,7 @@
 ## Main features:
 SWBFLauncher has the interface like any other launchers seen from different videogames. I put a lot of effort to make the design very intuitive for users so you do not get lost about what function does each button. Below I give a detailed description:
 
-- **Play:** As indicates its label, it runs the game. At the time of execution the launcher will collect preset information from the settings.ini file attached with the main executable.
+- **Play:** As indicates its label, it runs the game. At the time of execution the launcher will collect preset information from the `settings.ini` file attached with the main executable.
 
 - **AddOns:** This button will open a new window called AddOns. As SWBF1 players know there is a folder called AddOn which you can install new maps to the game and play them without modyfing or replacing the original files. Its main purpose is to deal with `AddOn` folders as you want and give more information to the files, such as the in-game name and ReadMe description if the file exists. There is also a Map Preview picture box where you can load an image to see how the map looks in-game by putting a `mapinfo.png` file. Both files should be put into the appropiate `MapID` folder to make them work. And not for less, I included an ability to enable/disable AddOn maps if anytime some of you do not want to show specific maps in-game.
 
