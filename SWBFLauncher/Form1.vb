@@ -19,8 +19,8 @@ Public Class Form1
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim title As String = "Red04's Star Wars Battlefront Launcher"
-        Dim version As String = "Version 0.2"
-        Dim copyright As String = "Copyright 2021 by Red04 (CC-4398)"
+        Dim version As String = "Version 0.3"
+        Dim copyright As String = "Copyright 2021-2023 by Red04 (CC-4398)"
         Dim license As String = "This software is not developed, supported or distributed by Pandemic Studios, LucasArts or Disney. LucasArts and the LucasArts logo are registered trademarks of Lucasfilm Ltd. Star Wars Battlefront is a trademark of Lucasfilm Entertainment Company Ltd. Copyright 2004-2005 Lucasfilm Entertainment Company Ltd. or Lucasfilm Ltd. & (R) or TM as indicated. All rights reserved."
         MsgBox(title + vbLf + version + vbLf + copyright + vbLf + vbLf + license, 0, "About")
     End Sub
@@ -58,9 +58,9 @@ Public Class Form1
             Dim backUpDirectory As String = "Data\_BACKUP"
             'In case any mod is installed. it loads the stock core.lvl in the corresponding directory.
             If System.IO.File.Exists(backUpDirectory & "\core.lvl") Then
-                gameLocalization.LoadCoreFile(backUpDirectory & "\core.lvl", False)
+                gameLocalization.LoadCoreFile(backUpDirectory & "\core.lvl", 0)
             Else
-                gameLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", False)
+                gameLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", 0)
             End If
             'Setting the selected language to the game.
             gameLocalization.ChangeLocalization(gameSettings.GetINIValue("Language"))
@@ -103,7 +103,7 @@ Public Class Form1
             If addOnsSettings.GetINIValue("AddOnLocalization") = 1 Then
                 For Each addOn As String In System.IO.Directory.GetDirectories(addOnDirectory)
                     If System.IO.File.Exists(addOn & "\addme.script") Or System.IO.File.Exists(addOn & "\_addme.script") Then
-                        addOnLocalization.LoadCoreFile(addOn & "\Data\_lvl_pc\core.lvl", True)
+                        addOnLocalization.LoadCoreFile(addOn & "\Data\_lvl_pc\core.lvl", 1)
                         addOnLocalization.ChangeLocalization(gameSettings.GetINIValue("Language"))
                     End If
                 Next
@@ -111,12 +111,12 @@ Public Class Form1
             If modsSettings.GetINIValue("ModLocalization") = 1 Then
                 For Each modID As String In System.IO.Directory.GetDirectories("Mods")
                     If System.IO.File.Exists(modID & "\Data\_lvl_pc\core.lvl") Then
-                        modLocalization.LoadCoreFile(modID & "\Data\_lvl_pc\core.lvl", False)
+                        modLocalization.LoadCoreFile(modID & "\Data\_lvl_pc\core.lvl", 2)
                         modLocalization.ChangeLocalization(gameSettings.GetINIValue("Language"))
                     End If
                 Next
                 If System.IO.File.Exists(backUpDirectory & "\core.lvl") Then
-                    modLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", False)
+                    modLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", 2)
                     modLocalization.ChangeLocalization(gameSettings.GetINIValue("Language"))
                 End If
             End If

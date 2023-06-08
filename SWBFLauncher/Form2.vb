@@ -89,12 +89,13 @@ Public Class Form2
             End If
             'If ReadMe file exist, we load all it's content.
             If System.IO.File.Exists(addOnDirectory & "\" & addOn.ToString & "\" & readMeFile) Then
-                Dim readMe As New System.IO.StreamReader(addOnDirectory & "\" & addOn.ToString & "\" & readMeFile(0))
+                Dim readMe As New System.IO.StreamReader(addOnDirectory & "\" & addOn.ToString & "\" & readMeFile)
                 TextBox3.Clear()
-                Do
-                    TextBox3.Text += readMe.ReadLine
-                    TextBox3.Text += vbCrLf
-                Loop Until readMe.EndOfStream
+                TextBox3.Text = readMe.ReadToEnd()
+                'Do
+                'TextBox3.Text += readMe.ReadLine()
+                'TextBox3.Text += vbCrLf
+                'Loop Until readMe.EndOfStream
                 readMe.Close()
             Else
                 TextBox3.Text = "Not available."

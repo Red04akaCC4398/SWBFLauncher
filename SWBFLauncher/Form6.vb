@@ -9,7 +9,7 @@ Public Class Form6
         Dim addOnDirectory As String = "AddOn"
         Dim lvlDirectory As String = "Data\_lvl_pc"
         Dim addOnLocalization As Localization = New Localization
-        addOnLocalization.LoadCoreFile(addOnDirectory & "\" & Form2.ListBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", True)
+        addOnLocalization.LoadCoreFile(addOnDirectory & "\" & Form2.ListBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", 1)
         ComboBox1.Text = addOnLocalization.GetLanguage
     End Sub
 
@@ -17,7 +17,7 @@ Public Class Form6
         Dim addOnDirectory As String = "AddOn"
         Dim lvlDirectory As String = "Data\_lvl_pc"
         Dim addOnLocalization As Localization = New Localization
-        addOnLocalization.LoadCoreFile(addOnDirectory & "\" & Form2.ListBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", True)
+        addOnLocalization.LoadCoreFile(addOnDirectory & "\" & Form2.ListBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", 1)
         addOnLocalization.ChangeLocalization(ComboBox1.Text)
         Me.Close()
     End Sub

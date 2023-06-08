@@ -11,10 +11,10 @@ Public Class Form7
         Dim backUpDirectory As String = "Data\_BACKUP"
         Dim modLocalization As Localization = New Localization
         If System.IO.File.Exists(modsDirectory & "\" & Form3.ComboBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl") Then
-            modLocalization.LoadCoreFile(modsDirectory & "\" & Form3.ComboBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", True)
+            modLocalization.LoadCoreFile(modsDirectory & "\" & Form3.ComboBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", 2)
             ComboBox1.Text = modLocalization.GetLanguage
         ElseIf System.IO.File.Exists(backUpDirectory & "\core.lvl") Then
-            modLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", True)
+            modLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", 2)
             ComboBox1.Text = modLocalization.GetLanguage
         Else
             ComboBox1.Enabled = False
@@ -28,9 +28,9 @@ Public Class Form7
         Dim backUpDirectory As String = "Data\_BACKUP"
         Dim modLocalization As Localization = New Localization
         If System.IO.File.Exists(modsDirectory & "\" & Form3.ComboBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl") Then
-            modLocalization.LoadCoreFile(modsDirectory & "\" & Form3.ComboBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", True)
+            modLocalization.LoadCoreFile(modsDirectory & "\" & Form3.ComboBox1.SelectedItem.ToString & "\" & lvlDirectory & "\core.lvl", 2)
         ElseIf System.IO.File.Exists(backUpDirectory & "\core.lvl") Then
-            modLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", True)
+            modLocalization.LoadCoreFile(lvlDirectory & "\core.lvl", 2)
         End If
         modLocalization.ChangeLocalization(ComboBox1.Text)
         Me.Close()

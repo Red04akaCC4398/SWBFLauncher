@@ -1,0 +1,39 @@
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.exe.config
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.exe
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.pdb
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.xml
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\bin\Release\winini.dll
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbprojAssemblyReference.cache
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form1.resources
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form2.resources
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form3.resources
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form4.resources
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form5.resources
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Resources.resources
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.GenerateResource.cache
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.CopyComplete
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.exe
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.xml
+C:\Users\Rubén RS\source\repos\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.pdb
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.exe.config
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.exe
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.pdb
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\bin\Release\SWBFLauncher.xml
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\bin\Release\winini.dll
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form1.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form2.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form3.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form4.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form5.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Resources.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.GenerateResource.cache
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.CopyComplete
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.exe
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.xml
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.pdb
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\bin\Release\localize.dll
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form6.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.Form7.resources
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.AssemblyReference.cache
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Rubén RS\Documents\DATA\Archivos de juegos\Red04SWBF\Projects\SWBFLauncher\SWBFLauncher\obj\Release\SWBFLauncher.vbproj.CoreCompileInputs.cache

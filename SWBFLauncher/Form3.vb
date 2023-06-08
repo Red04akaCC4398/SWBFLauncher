@@ -164,10 +164,11 @@ Public Class Form3
             If System.IO.File.Exists(modsDirectory & "\" & modID.ToString & "\" & readMeFile) Then
                 Dim readMe As New System.IO.StreamReader(modsDirectory & "\" & modID.ToString & "\" & readMeFile)
                 TextBox4.Clear()
-                Do
-                    TextBox4.Text += readMe.ReadLine
-                    TextBox4.Text += vbCrLf
-                Loop Until readMe.EndOfStream
+                TextBox4.Text = readMe.ReadToEnd()
+                'Do
+                'TextBox4.Text += readMe.ReadLine
+                'TextBox4.Text += vbCrLf
+                'Loop Until readMe.EndOfStream
                 readMe.Close()
             Else
                 TextBox4.Text = "Not available."
